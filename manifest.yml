@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: mobile
+  host: mobilevnet
+  disk_quota: 1024M
+  services:
+  - mobile-AdvancedMobileAccess
+  - mobile-imfpush
+  - mobile-cloudantNoSQLDB
+  - availability-monitoring-auto
